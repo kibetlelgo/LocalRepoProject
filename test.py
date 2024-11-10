@@ -1,11 +1,15 @@
-class Dog:
-  
-  def __init__(self, name, breed):
+class Animal:
+
+  def __init__(self, name):
     self.name = name
-    self.breed = breed
 
-  def __str__(self):
-    return f"{self.name} is a {self.breed}."
+  def speak(self):
+    return f"{self.name} makes a sound"
 
-dog = Dog("Buddy", "Bulldog")
-print(dog)   
+class Dog(Animal):
+  
+  def speak(self):
+    return f"{self.name} barks"
+
+my_dog = Dog("Buddy")
+print(my_dog.speak())
