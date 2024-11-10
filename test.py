@@ -1,5 +1,11 @@
-fruits = ["apple", "banana", "cherry"]
-for x in fruits:
-  print(x)
-  if x == "banana":
-    break
+class Dog:
+  
+  def __init__(self, name, breed):
+    self.name = name
+    self.breed = breed
+
+  def __str__(self):
+    return f"{self.name} is a {self.breed}."
+
+dog = Dog("Buddy", "Bulldog")
+print(dog)   
