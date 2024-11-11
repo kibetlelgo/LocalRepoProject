@@ -1,5 +1,5 @@
 class Dog:
-  breed = "Bulldog"
+  breed = "Kangal"
 
   def __init__(self, name):
     self.name = name
