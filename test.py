@@ -1,16 +1,16 @@
-class Animal:
+class Dog:
+  breed = "Bulldog"
 
   def __init__(self, name):
     self.name = name
 
-  def speak(self):
-    return f"{self.name} makes a sound"
+  @classmethod
 
-class Dog(Animal):
-  
-  def speak(self):
-    return f"{self.name} barks"
+  def change_breed(cls, new_breed):
+    cls.breed = new_breed
 
-my_dog = Dog("Buddy")
-print(my_dog.speak())
- 
+  def show_info(self):
+    print(f"{self.name} is a {self.breed}")
+
+dog1 = Dog("Buddy")
+dog1.show_info()        
